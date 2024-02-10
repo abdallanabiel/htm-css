@@ -1,0 +1,301 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body{
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    }
+    header div img{
+    
+    width: 120px;
+    height: 15px;
+    margin-top: 20px;
+    
+    }
+    header{
+    
+        margin-right: 10px;
+        z-index: 1;
+        margin-left: 50px;
+        justify-content: space-between;
+        position: fixed;
+        display: flex;
+    }
+    header a{
+    line-height: 30px;
+    padding: 0 15px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(34,34,34)
+    
+    }
+    .mdl{
+        margin-left: 200px;
+        position: relative;
+        display:flex;
+        align-items: center;
+        z-index: 5;
+        }
+        .mdl :nth-child(6){
+           
+            margin-right: 340px;
+        }
+    
+        .mdl :nth-child(1):hover{
+            background-color: rgba(128, 128 , 128 ,0.15);
+            border-radius: 10px;
+            opacity: 1;
+            left: 0;
+            width: 85px;
+            }
+            .mdl a:nth-child(2):hover{
+            background-color: rgba(128, 128 , 128 ,0.15);
+            opacity: 1;
+            left: 90;
+            width: 80px;
+            
+            }
+            .mdl :nth-child(3):hover{
+            background-color: rgba(128, 128 , 128 ,0.15);
+            opacity: 1;
+            left: 175;
+            width: 85px;
+            }
+        .mdl :nth-child(4):hover{ 
+            background-color: rgba(128, 128 , 128 ,0.15);
+            opacity: 1;
+            left: 260;
+            width: 85px;
+            }
+        .mdl :nth-child(5):hover{
+            background-color: rgba(128, 128 , 128 ,0.15);
+            opacity: 1;
+            left: 347;
+            width: 98px;
+            }
+            .mdl :nth-child(6):hover{
+            background-color: rgba(128, 128 , 128 ,0.15); 
+            opacity: 1;
+            left: 450;
+            width: 105px;
+           
+            }
+        .mdl :nth-child(7):hover{
+            background-color: rgba(128, 128 , 128 ,0.15);
+            opacity: 1;
+            left: 723;
+            width: 60px;
+            }
+        .mdl :nth-child(8):hover{
+            background-color: rgba(128, 128 , 128 ,0.15);
+            opacity: 1;
+            left:790;
+            width: 85px;
+            }
+        .mdl :nth-child(9):hover{
+            background-color: rgba(128, 128 , 128 ,0.15);
+            opacity: 1;
+            left: 875;
+            width:65px;
+
+            }
+    .main-1{
+     display: flex;
+     overflow: auto;
+     flex: none;
+     width: 100%;
+     height: 100vh;
+     flex-flow: column nowrap;   
+    }
+    .main-1>div{
+     text-align: center;
+     flex: none;
+     height: 100%;
+     width: 100%;
+    }        
+    .main-1 div img{
+     width: 100%;
+     height: 100vh;
+     object-fit: cover;
+     object-position: center;
+    }
+    .main-2{
+        position: relative;
+    }
+    
+    .head{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    height: 40vh;
+    align-items: center;
+    }  
+    .head h1{
+    
+     font-size: 45px;
+     font-weight: 500;
+     color:rgb(7, 7, 7);
+     padding-bottom: 5px;
+    }
+    .head p{
+        color: rgb(53,53,53);
+        font-size: 17px;
+        
+    }
+    .head a{
+     color:rgb(53,53,53);
+     text-decoration: underline;
+     color: pointer;
+     
+
+    }
+    .head a:hover{
+        text-decoration-thickness: 2px;
+    }
+    .login{
+        position:fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .login div{
+     display: flex;
+     justify-content: center;
+    }
+    .btn div{
+        align-items: center;
+        margin-right: 30px;
+        width: 265px;
+        height: 40px;
+        
+        border-radius: 5px;
+    }
+   #buy:hover{
+    background-color: #4f81e5;
+   }
+   
+    #buy{
+        background-color: #393c41;
+        color: white;
+    }
+    
+    #order{
+        background-color: #eeebeb;
+        color: #151618;
+    }
+    #buy,#order{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .blank{
+        height: 100px;
+       
+    }
+   
+    .blur{
+        position:absolute;
+        width: 100%;
+        display: none;
+        height: 100vh;
+        z-index: 99;
+        transition: all 1s;
+        backdrop-filter: blur(4px);
+        background-color: #393c416e;
+        
+
+    }
+    .blur.active{
+        display: block;
+    }
+    .side{
+        position: absolute;
+        right: 0;
+        width: 250px;
+        transform: translateX(0);
+        transition: all 1.2s;
+        z-index: 100;
+        height: 100%;
+        overflow: scroll;
+        background-color: white;
+    }
+    .side.active{
+        transform: translate(0);
+        opacity: 1;
+    }
+    #mark{
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+        background-color: white;
+        right: 0;
+       }
+       #mark .fa-xmark{
+
+        font-size: 20px;
+        padding: 8px 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    #mark .fa-xmark:hover{
+        background-color: rgb(237, 233, 233);
+        border-radius: 20%;
+    }
+    .side{
+        padding: 5px 30px;
+        height: 100%;
+        opacity: 0;
+        transform:translateX(320px);
+    }
+    .side li{
+     padding: 10px 15px;
+     font-size: 15px;
+     transition: all 0.5;
+     cursor: pointer;
+     margin-bottom: 1px;
+    }
+    .side li:hover{
+        background-color: rgb(233, 233, 233);
+        border-radius: 15px;
+    }
+   /* .head-1{
+        opacity: 1;
+        transition: all 1.5s;
+    }
+    .head-2 , .head-3 ,.head-4 ,.head-5 ,.head-6 ,.head-7 {
+        opacity: 0;
+        transition: all 1.5s;
+    }
+    .login{
+        opacity: 0;
+    }
+    .login-1{
+        opacity: 1;
+        transition: all 1.5s;
+    }
+   .login-2  ,.login-3 ,.login-4 ,.login-5 ,.login-6 ,.login-7 {
+    opacity: 0;
+    transition: all 1.5s;
+   }
+   
+   .activee{
+    opacity: 1;
+   }
+   
+   .hidee{
+    opacity: 0;
+   }
